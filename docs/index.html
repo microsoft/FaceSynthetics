@@ -1,1 +1,133 @@
-<h1>hello!</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src="https://kit.fontawesome.com/49f46e7382.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container is-max-desktop">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/">
+                    <img src="img/Microsoft-logo.svg" alt="Mixed Reality & AI Lab – Cambridge" style="height: 1.4rem;">
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/">
+                    Mixed Reality & AI
+                </a>
+                <a class="navbar-item" href="http://iccv2021.thecvf.com/">
+                    ICCV 2021
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h1 class="title is-2 has-text-centered">
+                Fake It Till You Make It
+            </h1>
+            <p class="subtitle is-4 has-text-centered">
+                Face analysis in the wild using synthetic data alone
+            </p>
+            <p class="subtitle is-6 has-text-centered authors" style="line-height: 1.5;">
+                <span>
+                    <a>Erroll Wood</a><sup>*</sup>
+                </span>
+                <span>
+                    <a>Tadas Baltrusaitis</a><sup>*</sup>
+                </span>
+                <span>
+                    <a>Charlie Hewitt</a>
+                </span>
+                <span>
+                    <a>Sebastian Dziadzio</a>
+                </span>
+                <span>
+                    <a>Matthew Johnson</a>
+                </span>
+                <span>
+                    <a>Virginia Estellers</a>
+                </span>
+                <span>
+                    <a>Thomas J. Cashman</a>
+                </span>
+                <span>
+                    <a>Jamie Shotton</a>
+                </span>
+            </p>
+        </div>
+        <!-- </section> -->
+        <!-- <section class="section"> -->
+        <div class="container is-max-desktop has-text-centered mt-5">
+            <a class="button is-rounded is-link is-light mr-2">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+            </a>
+            <a class="button is-rounded is-link is-light mr-2">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=G4aZZhWmm4k" class="button is-rounded is-link is-light mr-2">
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+                <span>Video</span>
+            </a>
+            <a href="https://github.com/microsoft/FaceSynthetics" class="button is-rounded is-link is-light">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Dataset</span>
+            </a>
+        </div>
+    </section>
+    <section>
+        <div class="container is-max-desktop">
+            <figure class="image is-16by9">
+                <iframe class="has-ratio" width="640" height="360" src="https://youtube.com/embed/G4aZZhWmm4k" frameborder="0" allowfullscreen></iframe>
+            </figure>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h1 class="title is-5">
+                Abstract
+            </h1>
+            <div class="content">
+                <p>We demonstrate that it is possible to perform face-related computer vision in the wild using synthetic data alone.</p>
+                <p>
+                    The community has long enjoyed the benefits of synthesizing training data with graphics, but the domain gap between real and synthetic data has remained a problem, especially for human faces. Researchers have tried to bridge this gap with data mixing,
+                    domain adaptation, and domain-adversarial training, but we show that it is possible to synthesize data with minimal domain gap, so that models trained on synthetic data generalize to real in-the-wild datasets.
+                </p>
+                <p>
+                    We describe how to combine a procedurally-generated parametric 3D face model with a comprehensive library of hand-crafted assets to render training images with unprecedented realism and diversity. We train machine learning systems for face-related tasks
+                    such as landmark localization and face parsing, showing that synthetic data can both match real data in accuracy as well as open up new approaches where manual labeling would be impossible.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container is-max-desktop">
+            <div class="columns is-mobile is-variable is-0-mobile is-0-tablet is-1-desktop is-1-widescreen is-1-fullhd">
+                <div class="column"><img src="img/iccv21_process_render_0.png" alt="Template face" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_1.png" alt="Template face" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_2.png" alt="Template face" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_3.png" alt="Template face" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_4.png" alt="Template face" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_5.png" alt="Template face" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_6.png" alt="Template face" style="width: 100%;"></div>
+            </div>
+            <p>
+                We procedurally construct synthetic faces that are realistic and expressive. Starting with our template face, we randomize the identity, choose a random expression, apply a random texture, attach random hair and clothing, and render the face in a random
+                environment.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>

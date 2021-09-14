@@ -44,7 +44,8 @@
             </p> -->
             <p class="subtitle is-6 has-text-centered authors" style="line-height: 1.5;">
                 <span>
-                    <a>Erroll Wood</a><sup>*</sup>
+                    <!-- alternative ast: &#x1F7B6; -->
+                    <a href="mailto:erwood@microsoft.com">Erroll Wood</a><sup>*</sup>
                 </span>
                 <span>
                     <a>Tadas Baltrusaitis</a><sup>*</sup>
@@ -72,10 +73,10 @@
         <!-- </section> -->
         <!-- <section class="section"> -->
         <div class="container is-max-desktop has-text-centered mt-5">
-            <a class="button is-rounded is-link is-light mr-2" disabled>
+            <!-- <a class="button is-rounded is-link is-light mr-2" disabled>
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>Paper</span>
-            </a>
+            </a> -->
             <a class="button is-rounded is-link is-light mr-2" disabled>
                 <span class="icon"><i class="ai ai-arxiv"></i></span>
                 <span>arXiv</span>
@@ -93,7 +94,7 @@
     <section>
         <div class="container is-max-desktop">
             <figure class="image is-16by9">
-                <iframe class="has-ratio" width="640" height="360" src="https://youtube.com/embed/G4aZZhWmm4k" frameborder="0" allowfullscreen></iframe>
+                <iframe class="has-ratio" width="640" height="360" src="https://youtube.com/embed/nRp_VQQgcNc" frameborder="0" allowfullscreen></iframe>
             </figure>
         </div>
     </section>
@@ -103,15 +104,58 @@
                 Abstract
             </h1>
             <div class="content">
-                <p>We demonstrate that it is possible to perform face-related computer vision in the wild using synthetic data alone.</p>
+                <p>We demonstrate that it is possible to perform face-related computer vision in the wild <strong>using synthetic data alone</strong>.</p>
                 <p>
                     The community has long enjoyed the benefits of synthesizing training data with graphics, but the domain gap between real and synthetic data has remained a problem, especially for human faces. Researchers have tried to bridge this gap with data mixing,
                     domain adaptation, and domain-adversarial training, but we show that it is possible to synthesize data with minimal domain gap, so that models trained on synthetic data generalize to real in-the-wild datasets.
                 </p>
                 <p>
                     We describe how to combine a procedurally-generated parametric 3D face model with a comprehensive library of hand-crafted assets to render training images with unprecedented realism and diversity. We train machine learning systems for face-related tasks
-                    such as landmark localization and face parsing, showing that synthetic data can both match real data in accuracy as well as open up new approaches where manual labeling would be impossible.
+                    such as landmark localization and face parsing, showing that synthetic data can both match real data in accuracy as well as open up new approaches where manual labelling would be impossible.
                 </p>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-0">
+        <div class="container is-max-desktop">
+            <h1 class="title is-4">
+                Dataset
+            </h1>
+            <content>
+                <figure class="image mb-5">
+                    <img src="img/dataset_samples.jpg">
+                </figure>
+                <p>
+                    Our dataset of <strong>100,000 synthetic faces</strong> with 2D landmark and per-pixel segmentation labels will be available to download soon, for non-commercial research purposes. Please watch this space.
+                </p>
+            </content>
+        </div>
+    </section>
+    <section class="section pt-0">
+        <div class="container is-max-desktop">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title is-5">
+                        Face Parsing
+                    </h1>
+                    <video class="mb-3 is-16by9" width="100%" autoplay muted loop>
+                        <source src="video/face_parsing.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        Pixel-perfect segmentation labels let us achieve near-SOTA results using off-the-shelf neural networks.
+                    </p>
+                </div>
+                <div class="column">
+                    <h1 class="title is-5">
+                        Dense Landmarks
+                    </h1>
+                    <video class="mb-3 is-16by9" width="100%" autoplay muted loop>
+                        <source src="video/dense_landmarks.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        With synthetic landmark labels, its easy to predict ten times as many landmarks as usual.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -121,20 +165,41 @@
                 Method
             </h1>
             <div class="columns is-mobile is-variable is-0-mobile is-0-tablet is-1-desktop is-1-widescreen is-1-fullhd">
-                <div class="column"><img src="img/iccv21_process_render_0.png" alt="Template face" style="width: 100%;"></div>
-                <div class="column"><img src="img/iccv21_process_render_1.png" alt="Template face" style="width: 100%;"></div>
-                <div class="column"><img src="img/iccv21_process_render_2.png" alt="Template face" style="width: 100%;"></div>
-                <div class="column"><img src="img/iccv21_process_render_3.png" alt="Template face" style="width: 100%;"></div>
-                <div class="column"><img src="img/iccv21_process_render_4.png" alt="Template face" style="width: 100%;"></div>
-                <div class="column"><img src="img/iccv21_process_render_5.png" alt="Template face" style="width: 100%;"></div>
-                <div class="column"><img src="img/iccv21_process_render_6.png" alt="Template face" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_0.png" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_1.png" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_2.png" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_3.png" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_4.png" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_5.png" style="width: 100%;"></div>
+                <div class="column"><img src="img/iccv21_process_render_6.png" style="width: 100%;"></div>
             </div>
             <p>
-                We procedurally construct synthetic faces that are realistic and expressive. Starting with our template face, we randomize the identity, choose a random expression, apply a random texture, attach random hair and clothing, and render the face in a random
-                environment.
+                Our synthetic faces are realistic, diverse, and expressive. Starting with our template face, we randomize the identity, choose a random expression, apply a random texture, and attach random hair and clothing. We finally render the face in a random environment
+                using <a href=https://www.cycles-renderer.org>Cycles</a>: a physically-based path tracing renderer.
             </p>
         </div>
     </section>
+    <section class="section pt-0">
+        <div class="container is-max-desktop">
+            <h1 class="title is-4">
+                BibTeX
+            </h1>
+            <pre>
+@article{wood2021fakeit
+    author  = {Wood, Erroll and Baltrusaitis, Tadas and Hewitt, Charlie and Dziadzio, Sebastian and Cashman, Thomas J. and Shotton, Jamie},
+    title   = {Fake it till you make it: Face analysis in the wild using synthetic data alone},
+    journal = {ICCV},
+    year    = {2021},
+}</pre>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                * denotes equal contribution.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -177,6 +177,20 @@
                 Our synthetic faces are realistic, diverse, and expressive. Starting with our template face, we randomize the identity, choose a random expression, apply a random texture, and attach random hair and clothing. We finally render the face in a random environment
                 using <a href=https://www.cycles-renderer.org>Cycles</a>: a physically-based path tracing renderer.
             </p>
+            <div class="columns mt-4">
+                <div class="column">
+                    <img class="mb-3" src="img/iccv21_identity_samples.png" />
+                    <p>
+                        Identities sampled from our generative model. We trained this model on a diverse set of high quality scan data.
+                    </p>
+                </div>
+                <div class="column">
+                    <img class="mb-3" src="img/iccv21_expression_samples.png" />
+                    <p>
+                        We randomly pick facial expressions from our performance capture database of 70,000 frames.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section pt-0">
@@ -196,7 +210,8 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                * denotes equal contribution.
+                * denotes equal contribution.&ensp;Work conducted at the <a href=https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge>Mixed Reality & AI Lab &ndash; Cambridge</a>.&ensp;© Microsoft 2021<br/>
+                <img src="img/Microsoft-logo-only.svg" class="mt-5" alt="Mixed Reality & AI Lab – Cambridge" style="height: 2rem;">
             </p>
         </div>
     </footer>

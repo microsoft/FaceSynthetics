@@ -1,3 +1,5 @@
+![alt text](docs/img/dataset_samples_2.jpg)
+
 # The Face Synthetics Dataset
 
 Face Synthetics dataset is a collection of diverse synthetic face images with ground truth labels.

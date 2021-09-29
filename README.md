@@ -29,7 +29,7 @@ The Face Synthetics dataset consists of a collection of face images with corresp
 ├── {subj_id}_ldmks.txt  # Landmark annotations for 70 facial landmarks (x, y) coordinates for every row
 ```
 
-Our landmark annotations follow the 68 landmark scheme from [iBUG](https://ibug.doc.ic.ac.uk/resources/300-W/) with additional 2 points for pupil centre. 
+Our landmark annotations follow the 68 landmark scheme from [iBUG](https://ibug.doc.ic.ac.uk/resources/300-W/) with additional 2 points for pupil centre.
 Please note that our 2D landmarks are projections of 3D points and do not follow the outline of the face/lips/eyebrows the same way as would be expected from manually annotated landmarks.
 They can be through of as X-ray version of 2D landmarks.
 
@@ -76,7 +76,7 @@ If you use the Face Synthetics dataset your research, please cite the following 
 
 ```
 @article{wood2021fakeit
-    author  = {Wood, Erroll and Baltrusaitis, Tadas and Hewitt, Charlie and Dziadzio, Sebastian and Cashman, Thomas J. and Shotton, Jamie},
+    author  = {Wood, Erroll and Baltru\v{s}aitis, Tadas and Hewitt, Charlie and Dziadzio, Sebastian and Cashman, Thomas J. and Shotton, Jamie},
     title   = {Fake it till you make it: Face analysis in the wild using synthetic data alone},
     journal = {ICCV},
     year    = {2021},

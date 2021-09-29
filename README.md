@@ -51,7 +51,7 @@ Our dataset has the following 19 semantic segmentaiton classes
     HAIR = 13
     BEARD = 14
     CLOTHING = 15
-    GLASSES = 16
+    GLASSES = 16      # Note that opaque lenses are labeled as glasses, while transparent lenses as the class behind them
     HEADWEAR = 17
     FACEWEAR = 18
     IGNORE = 255

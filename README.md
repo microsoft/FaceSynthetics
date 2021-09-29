@@ -54,6 +54,7 @@ Our dataset has the following 19 semantic segmentaiton classes
     GLASSES = 16
     HEADWEAR = 17
     FACEWEAR = 18
+    IGNORE = 255
 ```
 
 ## Disclaimer

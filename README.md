@@ -13,9 +13,11 @@ The Face Synthetics Dataset is licensed under the license found in EULA.txt
 
 ## Downloading the dataset
 
+A sample dataset with 100 images (50MB) can be downloaded directly from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100.zip)
+
 A sample dataset with 1000 images (500MB) can be downloaded directly from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_1000.zip)
 
-A full dataset of 100,000 images (TODO) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100k.zip)
+A full dataset of 100,000 images (50GB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100k.zip)
 
 ## Dataset layout
 

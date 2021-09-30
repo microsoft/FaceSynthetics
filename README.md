@@ -66,9 +66,9 @@ Some of our rendered faces may be close in appearance to the faces of real peopl
 
 ## Generalization to real data
 
-Our dataset can be used to train machine learning models that generalize to real images. For best results, we suggest you follow the methodology described in our paper - **Fake it till you make it: face analysis in the wild using synthetic data alone** (citation below). Especially note the need for 1) data augmentation; 2) use of a translation layer if evaluating on real data benchmarks that contain different types of annotations.
+For best results, we suggest you follow the methodology described in our paper - **Fake it till you make it: face analysis in the wild using synthetic data alone** (citation below). Especially note the need for 1) data augmentation; 2) use of a translation layer if evaluating on real data benchmarks that contain different types of annotations.
 
-Our dataset strives to be as diverse as possible and can be expected to generalize to a number of environments. However, you may encounter situations where it does not generalize as well. We always recommend that machine learning practitioners test their models on real data that is representative of the target deployment scenario, before deploying the models.
+Our dataset strives to be as diverse as possible, however, you may encounter situations that it does not cover and does not generalize as well. We always recommend that machine learning practitioners test their models on real data that is representative of the target deployment scenario, before deploying the models.
 
 
 ## Citation

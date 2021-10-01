@@ -17,11 +17,11 @@ The Face Synthetics Dataset is licensed under the license found in EULA.txt
 
 ## Downloading the dataset
 
-A sample dataset with 100 images (50MB) can be downloaded directly from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100.zip)
+A sample dataset with 100 images (34MB) can be downloaded directly from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100.zip)
 
-A sample dataset with 1000 images (500MB) can be downloaded directly from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_1000.zip)
+A sample dataset with 1000 images (320MB) can be downloaded directly from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_1000.zip)
 
-A full dataset of 100,000 images (50GB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100k.zip)
+A full dataset of 100,000 images (32GB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip)
 
 ## Dataset layout
 
@@ -68,14 +68,14 @@ Some of our rendered faces may be close in appearance to the faces of real peopl
 
 ## Generalization to real data
 
-For best results, we suggest you follow the methodology described in our paper - **Fake it till you make it: face analysis in the wild using synthetic data alone** (citation below). Especially note the need for 1) data augmentation; 2) use of a translation layer if evaluating on real data benchmarks that contain different types of annotations.
+For best results, we suggest you follow the methodology described in our [paper](https://arxiv.org/abs/2109.15102) (citation below). Especially note the need for 1) data augmentation; 2) use of a translation layer if evaluating on real data benchmarks that contain different types of annotations.
 
 Our dataset strives to be as diverse as possible, however, you may encounter situations that it does not cover and does not generalize as well. We always recommend that machine learning practitioners test their models on real data that is representative of the target deployment scenario, before deploying the models.
 
 
 ## Citation
 
-If you use the Face Synthetics dataset your research, please cite the following [paper](TODO link to arxiv?):
+If you use the Face Synthetics dataset your research, please cite the following [paper](https://arxiv.org/abs/2109.15102):
 
 
 ```

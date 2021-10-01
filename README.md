@@ -77,10 +77,12 @@ If you use the Face Synthetics dataset your research, please cite the following 
 
 
 ```
-@article{wood2021fakeit
-    author  = {Wood, Erroll and Baltru\v{s}aitis, Tadas and Hewitt, Charlie and Dziadzio, Sebastian and Cashman, Thomas J. and Shotton, Jamie},
-    title   = {Fake it till you make it: Face analysis in the wild using synthetic data alone},
-    journal = {ICCV},
-    year    = {2021},
+@misc{wood2021fake,
+    title={Fake It Till You Make It: Face analysis in the wild using synthetic data alone},
+    author={Erroll Wood and Tadas Baltru\v{s}aitis and Charlie Hewitt and Sebastian Dziadzio and Matthew Johnson and Virginia Estellers and Thomas J. Cashman and Jamie Shotton},
+    year={2021},
+    eprint={2109.15102},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```

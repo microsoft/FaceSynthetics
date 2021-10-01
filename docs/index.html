@@ -16,23 +16,30 @@
 <body>
     <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
         <div class="container is-max-desktop">
-            <div class="navbar-start">
-                <div class="navbar-brand">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/">
+                    <img src="img/Microsoft-logo.svg" alt="Mixed Reality & AI Lab – Cambridge" style="height: 1.4rem;">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
                     <a class="navbar-item" href="https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/">
-                        <img src="img/Microsoft-logo.svg" alt="Mixed Reality & AI Lab – Cambridge" style="height: 1.4rem;">
+                        Mixed Reality & AI
                     </a>
                 </div>
-                <a class="navbar-item" href="https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/">
-                    Mixed Reality & AI
-                </a>
-            </div>
-            <div class="navbar-end">
-                <a class="navbar-item" href="http://iccv2021.thecvf.com/">
-                    <img src="img/iccv-logo.svg" alt="ICCV 2021" style="height: 1.1rem;">
-                </a>
+                <div class="navbar-end">
+                    <a class="navbar-item" href="http://iccv2021.thecvf.com/">
+                        <img class="is-hidden-touch" src="img/iccv-logo.svg" alt="ICCV 2021" style="height: 1.1rem;">
+                        <img class="is-hidden-desktop" src="img/iccv-logo-blue.svg" alt="ICCV 2021" style="height: 1.1rem;">
+                    </a>
+                </div>
             </div>
         </div>
-
     </nav>
     <section class="section">
         <div class="container is-max-desktop">
@@ -47,28 +54,28 @@
             </p> -->
             <p class="subtitle is-6 has-text-centered authors" style="line-height: 1.5;">
                 <span>
-                    <a href="http://www.errollw.com/" class="has-tooltip-bottom" data-tooltip="* denotes equal contribution">Erroll Wood</a><sup>*</sup>
+                    <a href="http://www.errollw.com/" class="has-tooltip-bottom" data-tooltip="* denotes equal contribution">Erroll&nbsp;Wood</a><sup>*</sup>
                 </span>
                 <span>
-                    <a href="mailto:tabaltru@microsoft.com" class="has-tooltip-bottom" data-tooltip="* denotes equal contribution">Tadas Baltrusaitis</a><sup>*</sup>
+                    <a href="mailto:tabaltru@microsoft.com" class="has-tooltip-bottom" data-tooltip="* denotes equal contribution">Tadas&nbsp;Baltrusaitis</a><sup>*</sup>
                 </span>
                 <span>
-                    <a href="mailto:chewitt@microsoft.com">Charlie Hewitt</a>
+                    <a href="mailto:chewitt@microsoft.com">Charlie&nbsp;Hewitt</a>
                 </span>
                 <span>
-                    <a href="mailto:sedziadz@microsoft.com">Sebastian Dziadzio</a>
+                    <a href="mailto:sedziadz@microsoft.com">Sebastian&nbsp;Dziadzio</a>
                 </span>
                 <span>
-                    <a href="mailto:matjoh@microsoft.com">Matthew Johnson</a>
+                    <a href="mailto:matjoh@microsoft.com">Matthew&nbsp;Johnson</a>
                 </span>
                 <span>
-                    <a href="mailto:Virginia.Estellers@microsoft.com">Virginia Estellers</a>
+                    <a href="mailto:Virginia.Estellers@microsoft.com">Virginia&nbsp;Estellers</a>
                 </span>
                 <span>
-                    <a href="mailto:tcashman@microsoft.com">Thomas J. Cashman</a>
+                    <a href="mailto:tcashman@microsoft.com">Thomas&nbsp;J.&nbsp;Cashman</a>
                 </span>
                 <span>
-                    <a href="https://jamie.shotton.org/">Jamie Shotton</a>
+                    <a href="https://jamie.shotton.org/">Jamie&nbsp;Shotton</a>
                 </span>
             </p>
         </div>
@@ -250,5 +257,32 @@
         </div>
     </footer>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+    });
+</script>
 
 </html>

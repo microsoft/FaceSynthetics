@@ -1,18 +1,3 @@
-/* body {
-    font-family: "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-section {
-    max-width: 700px;
-    margin: auto;
-}
-
-h1,
-h2,
-h3 {
-    text-align: center;
-} */
-
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 @import "https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css";
 @media screen and (min-width: 1024px) {
@@ -23,4 +8,10 @@ h3 {
 
 .authors>span {
     padding-left: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+    a.button.is-rounded.is-link.is-light:not(:last-child) {
+        margin-bottom: 1em;
+    }
 }

@@ -12,6 +12,6 @@
 
 @media only screen and (max-width: 480px) {
     a.button.is-rounded.is-link.is-light:not(:last-child) {
-        margin-bottom: 1em;
+        margin-bottom: 0.75em;
     }
 }

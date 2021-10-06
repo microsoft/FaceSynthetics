@@ -34,10 +34,10 @@ The Face Synthetics dataset consists of a collection of face images with corresp
 ```
 
 Our landmark annotations follow the 68 landmark scheme from [iBUG](https://ibug.doc.ic.ac.uk/resources/300-W/) with additional 2 points for pupil centre.
-Please note that our 2D landmarks are projections of 3D points and do not follow the outline of the face/lips/eyebrows the same way as would be expected from manually annotated landmarks.
-They can be through of as X-ray version of 2D landmarks.
+Please note that our 2D landmarks are projections of 3D points and do not follow the outline of the face/lips/eyebrows in the way that is common from manually annotated landmarks.
+They can be thought of as an "x-ray" version of 2D landmarks.
 
-Our dataset has the following 19 semantic segmentaiton classes
+Our dataset has the following 19 semantic segmentation classes
 ```
     BACKGROUND = 0
     SKIN = 1
@@ -63,14 +63,14 @@ Our dataset has the following 19 semantic segmentaiton classes
 
 ## Disclaimer
 
-Some of our rendered faces may be close in appearance to the faces of real people.  Such similarity is naturally unintentional, as it would be in a dataset of real images, where some people may appear similar to others unknown to them.
+Some of our rendered faces may be close in appearance to the faces of real people.  Any such similarity is naturally unintentional, as it would be in a dataset of real images, where people may appear similar to others unknown to them.
 
 
 ## Generalization to real data
 
 For best results, we suggest you follow the methodology described in our [paper](https://arxiv.org/abs/2109.15102) (citation below). Especially note the need for 1) data augmentation; 2) use of a translation layer if evaluating on real data benchmarks that contain different types of annotations.
 
-Our dataset strives to be as diverse as possible, however, you may encounter situations that it does not cover and does not generalize as well. We always recommend that machine learning practitioners test their models on real data that is representative of the target deployment scenario, before deploying the models.
+Our dataset strives to be as diverse as possible and generalizes to real test data as described in the paper. However, you may encounter situations that it does not cover and/or where generalization is less successful. We recommend that machine learning practitioners always test models on real data that is representative of the target deployment scenario.
 
 
 ## Citation

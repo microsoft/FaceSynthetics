@@ -13,7 +13,7 @@ It can be used to train machine learning systems for face-related tasks such as 
 
 Some images also include hands and off-center distractor faces in addition to primary faces centered in the image.
 
-The Face Synthetics Dataset is licensed under the license found in EULA.txt
+The Face Synthetics Dataset is licensed under the license found in [LICENSE.txt](LICENSE.txt).
 
 ## Downloading the dataset
 

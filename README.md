@@ -1,8 +1,10 @@
 ![alt text](docs/img/dataset_samples_2.jpg)
 
-# The Face Synthetics Dataset
+# The Face Synthetics dataset
 
 Face Synthetics dataset is a collection of diverse synthetic face images with ground truth labels.
+
+It was introduced in our paper [**Fake It Till You Make It: Face analysis in the wild using synthetic data alone**](https://microsoft.github.io/FaceSynthetics/) (ICCV 2021).
 
 Our dataset contains:
 - 100,000 images of faces at 512 x 512 pixel resolution
@@ -13,53 +15,60 @@ It can be used to train machine learning systems for face-related tasks such as 
 
 Some images also include hands and off-center distractor faces in addition to primary faces centered in the image.
 
-The Face Synthetics Dataset is licensed under the license found in [LICENSE.txt](LICENSE.txt).
+The Face Synthetics dataset can be used for **non-commercial** research, and is licensed under the license found in [LICENSE.txt](LICENSE.txt).
 
 ## Downloading the dataset
 
-A sample dataset with 100 images (34MB) can be downloaded directly from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100.zip)
+A sample dataset with 100 images (34MB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100.zip)
 
-A sample dataset with 1000 images (320MB) can be downloaded directly from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_1000.zip)
+A sample dataset with 1000 images (320MB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_1000.zip)
 
 A full dataset of 100,000 images (32GB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip)
 
 ## Dataset layout
 
-The Face Synthetics dataset consists of a collection of face images with corresponding ground truth annotations:
+The Face Synthetics dataset is a single .zip file containing color images, segmentation images, and 2D landmark coordinates in a text file.
 
 ```
-├── {subj_id}.png        # Rendered image of a face
-├── {subj_id}_seg.png    # Segmentation mask corresponding to the image, encoded as an integer for semantic category
-├── {subj_id}_ldmks.txt  # Landmark annotations for 70 facial landmarks (x, y) coordinates for every row
+dataset.zip
+├── {frame_id}.png        # Rendered image of a face
+├── {frame_id}_seg.png    # Segmentation image, where each pixel has an integer value mapping to the categories below
+├── {frame_id}_ldmks.txt  # Landmark annotations for 70 facial landmarks (x, y) coordinates for every row
 ```
 
-Our landmark annotations follow the 68 landmark scheme from [iBUG](https://ibug.doc.ic.ac.uk/resources/300-W/) with additional 2 points for pupil centre.
+Our landmark annotations follow the 68 landmark scheme from [iBUG](https://ibug.doc.ic.ac.uk/resources/300-W/) with two additional points for the pupil centers.
 Please note that our 2D landmarks are projections of 3D points and do not follow the outline of the face/lips/eyebrows in the way that is common from manually annotated landmarks.
 They can be thought of as an "x-ray" version of 2D landmarks.
 
-Our dataset has the following 19 semantic segmentation classes
+Each pixel in the segmentation image will belong to one of the following classes:
 ```
-    BACKGROUND = 0
-    SKIN = 1
-    NOSE = 2
-    RIGHT_EYE = 3
-    LEFT_EYE = 4
-    RIGHT_BROW = 5
-    LEFT_BROW = 6
-    RIGHT_EAR = 7
-    LEFT_EAR = 8
-    MOUTH_INTERIOR = 9
-    TOP_LIP = 10
-    BOTTOM_LIP = 11
-    NECK = 12
-    HAIR = 13
-    BEARD = 14
-    CLOTHING = 15
-    GLASSES = 16      # Note that opaque lenses are labeled as glasses, while transparent lenses as the class behind them
-    HEADWEAR = 17
-    FACEWEAR = 18
-    IGNORE = 255
+BACKGROUND = 0
+SKIN = 1
+NOSE = 2
+RIGHT_EYE = 3
+LEFT_EYE = 4
+RIGHT_BROW = 5
+LEFT_BROW = 6
+RIGHT_EAR = 7
+LEFT_EAR = 8
+MOUTH_INTERIOR = 9
+TOP_LIP = 10
+BOTTOM_LIP = 11
+NECK = 12
+HAIR = 13
+BEARD = 14
+CLOTHING = 15
+GLASSES = 16
+HEADWEAR = 17
+FACEWEAR = 18
+IGNORE = 255
 ```
+
+Pixels marked as `IGNORE` should be ignored during training.
+
+Notes:
+* Opaque eyeglass lenses are labeled as `GLASSES`, while transparent lenses as the class behind them.
+* For bushy eyebrows, a few eyebrow pixels may extend beyond the boundary of the face. These pixels are labelled as `IGNORE`.
 
 ## Disclaimer
 
@@ -75,7 +84,7 @@ Our dataset strives to be as diverse as possible and generalizes to real test da
 
 ## Citation
 
-If you use the Face Synthetics dataset your research, please cite the following [paper](https://arxiv.org/abs/2109.15102):
+If you use the Face Synthetics Dataset your research, please cite the following [paper](https://arxiv.org/abs/2109.15102):
 
 
 ```

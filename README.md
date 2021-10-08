@@ -4,7 +4,7 @@
 
 Face Synthetics dataset is a collection of diverse synthetic face images with ground truth labels.
 
-It was introduced in our paper [**Fake It Till You Make It: Face analysis in the wild using synthetic data alone**](https://microsoft.github.io/FaceSynthetics/) (ICCV 2021).
+It was introduced in our paper [**Fake It Till You Make It: Face analysis in the wild using synthetic data alone**](https://microsoft.github.io/FaceSynthetics/).
 
 Our dataset contains:
 - 100,000 images of faces at 512 x 512 pixel resolution

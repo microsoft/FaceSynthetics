@@ -111,7 +111,7 @@
             <h1 class="title is-4">
                 Abstract
             </h1>
-            <div class="content">
+            <div class="content has-text-justified">
                 <p>We demonstrate that it is possible to perform face-related computer vision in the wild <strong>using synthetic data alone</strong>.</p>
                 <p>
                     The community has long enjoyed the benefits of synthesizing training data with graphics, but the domain gap between real and synthetic data has remained a problem, especially for human faces. Researchers have tried to bridge this gap with data mixing,
@@ -129,14 +129,12 @@
             <h1 class="title is-4">
                 Dataset
             </h1>
-            <content>
-                <figure class="image mb-5">
-                    <img src="img/dataset_samples.jpg">
-                </figure>
+            <div class="content has-text-justified">
+                <img class="mb-5" src="img/dataset_samples.jpg">
                 <p>
                     Our dataset of <strong>100,000 synthetic faces</strong> with 2D landmark and per-pixel segmentation labels will be available to download soon, for non-commercial research purposes. Please watch this space.
                 </p>
-            </content>
+            </div>
         </div>
     </section>
     <section class="section pt-0">
@@ -181,7 +179,7 @@
                 <div class="column"><img src="img/iccv21_process_render_5.png" style="width: 100%;"></div>
                 <div class="column"><img src="img/iccv21_process_render_6.png" style="width: 100%;"></div>
             </div>
-            <p>
+            <p class="has-text-justified">
                 Our synthetic faces are realistic, diverse, and expressive. Starting with our template face, we randomize the identity, choose a random expression, apply a random texture, and attach random hair and clothing. We finally render the face in a random environment
                 using <a href=https://www.cycles-renderer.org>Cycles</a>: a physically-based path tracing renderer.
             </p>
@@ -202,7 +200,7 @@
         </div>
     </section>
     <section class="section pt-0">
-        <div class="container is-max-desktop">
+        <div class="container is-max-desktop has-text-justified">
             <h1 class="title is-4">
                 Diversity
             </h1>

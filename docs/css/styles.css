@@ -10,6 +10,10 @@
     padding: 0 0.5rem;
 }
 
+.section p {
+    text-align: justify;
+}
+
 @media only screen and (max-width: 480px) {
     a.button.is-rounded.is-link.is-light:not(:last-child) {
         margin-bottom: 0.75em;

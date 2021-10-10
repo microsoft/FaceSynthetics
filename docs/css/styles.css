@@ -8,6 +8,7 @@
 
 .authors>span {
     padding: 0 0.5rem;
+    display: inline-block;
 }
 
 .section p {

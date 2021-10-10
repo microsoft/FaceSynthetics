@@ -111,7 +111,7 @@
             <h1 class="title is-4">
                 Abstract
             </h1>
-            <div class="content has-text-justified">
+            <div class="content has-text-justified-desktop">
                 <p>We demonstrate that it is possible to perform face-related computer vision in the wild <strong>using synthetic data alone</strong>.</p>
                 <p>
                     The community has long enjoyed the benefits of synthesizing training data with graphics, but the domain gap between real and synthetic data has remained a problem, especially for human faces. Researchers have tried to bridge this gap with data mixing,
@@ -129,7 +129,7 @@
             <h1 class="title is-4">
                 Dataset
             </h1>
-            <div class="content has-text-justified">
+            <div class="content has-text-justified-desktop">
                 <img class="mb-5" src="img/dataset_samples.jpg">
                 <p>
                     Our dataset of <strong>100,000 synthetic faces</strong> with 2D landmark and per-pixel segmentation labels will be available to download soon, for non-commercial research purposes. Please watch this space.
@@ -147,7 +147,7 @@
                     <video class="mb-3 is-16by9" width="100%" autoplay muted loop playsinline>
                         <source src="video/face_parsing.mp4" type="video/mp4">
                     </video>
-                    <p class="has-text-justified-mobile">
+                    <p>
                         Pixel-perfect segmentation labels let us achieve near-SOTA results using off-the-shelf neural networks.
                     </p>
                 </div>
@@ -158,7 +158,7 @@
                     <video class="mb-3 is-16by9" width="100%" autoplay muted loop playsinline>
                         <source src="video/dense_landmarks.mp4" type="video/mp4">
                     </video>
-                    <p class="has-text-justified-mobile">
+                    <p>
                         With synthetic landmark labels, its easy to predict ten times as many landmarks as usual.
                     </p>
                 </div>
@@ -179,20 +179,20 @@
                 <div class="column"><img src="img/iccv21_process_render_5.png" style="width: 100%;"></div>
                 <div class="column"><img src="img/iccv21_process_render_6.png" style="width: 100%;"></div>
             </div>
-            <p class="has-text-justified">
+            <p class="has-text-justified-desktop">
                 Our synthetic faces are realistic, diverse, and expressive. Starting with our template face, we randomize the identity, choose a random expression, apply a random texture, and attach random hair and clothing. We finally render the face in a random environment
                 using <a href=https://www.cycles-renderer.org>Cycles</a>: a physically-based path tracing renderer.
             </p>
             <div class="columns mt-4">
                 <div class="column">
                     <img class="mb-3" src="img/iccv21_identity_samples.png" />
-                    <p class="has-text-justified-mobile">
+                    <p>
                         Identities sampled from our generative model. We trained this model on a diverse set of high quality scan data.
                     </p>
                 </div>
                 <div class="column">
                     <img class="mb-3" src="img/iccv21_expression_samples.png" />
-                    <p class="has-text-justified-mobile">
+                    <p>
                         We randomly pick facial expressions from our performance capture database of 70,000 frames.
                     </p>
                 </div>
@@ -204,7 +204,7 @@
             <h1 class="title is-4">
                 Diversity
             </h1>
-            <div class="content has-text-justified">
+            <div class="content has-text-justified-desktop">
                 <img class="mb-3" src="img/muct_9x2.jpg" />
                 <p>
                     Synthetically-trained machine learning models should work well across the human population.
@@ -219,7 +219,7 @@
                     <img class="mb-3" src="img/face-model-data-stats.png" />
                 </div>
                 <div class="column">
-                    <div class="content has-text-justified">
+                    <div class="content has-text-justified-desktop">
                         <p>
                             In order to generate diverse synthetic data, our generative models must be trained with diverse source data.
                         </p>

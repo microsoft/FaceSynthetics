@@ -16,3 +16,8 @@
         margin-bottom: 0.75em;
     }
 }
+
+.footer-links a {
+    color: inherit !important;
+    padding: 0 1em;
+}

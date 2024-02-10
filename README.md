@@ -23,7 +23,7 @@ A sample dataset with 100 images (34MB) can be downloaded from [here](https://fa
 
 A sample dataset with 1000 images (320MB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_1000.zip)
 
-A full dataset of 100,000 images (32GB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip)
+A full dataset of 100,000 images (32GB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip). It is also available as a [Hugging Face Dataset](https://huggingface.co/datasets/pcuenq/face_synthetics) for easy use with the `datasets` library and Hugging Face training tools.
 
 Alternatively, the full dataset is split into parts for easier download [P1](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip.001), [P2](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip.002), [P3](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip.003), [P4](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip.004)
 

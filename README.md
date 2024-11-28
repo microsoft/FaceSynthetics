@@ -19,13 +19,13 @@ The Face Synthetics dataset can be used for **non-commercial** research, and is 
 
 ## Downloading the dataset
 
-A sample dataset with 100 images (34MB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100.zip)
+A sample dataset with 100 images (34MB) can be downloaded from [here](https://facesyntheticspubwedata.z6.web.core.windows.net/iccv-2021/dataset_100.zip)
 
-A sample dataset with 1000 images (320MB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_1000.zip)
+A sample dataset with 1000 images (320MB) can be downloaded from [here](https://facesyntheticspubwedata.z6.web.core.windows.net/iccv-2021/dataset_1000.zip)
 
-A full dataset of 100,000 images (32GB) can be downloaded from [here](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip)
+A full dataset of 100,000 images (32GB) can be downloaded from [here](https://facesyntheticspubwedata.z6.web.core.windows.net/iccv-2021/dataset_100000.zip)
 
-Alternatively, the full dataset is split into parts for easier download [P1](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip.001), [P2](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip.002), [P3](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip.003), [P4](https://facesyntheticspubwedata.blob.core.windows.net/iccv-2021/dataset_100000.zip.004)
+Alternatively, the full dataset is split into parts for easier download [P1](https://facesyntheticspubwedata.z6.web.core.windows.net/iccv-2021/dataset_100000.zip.001), [P2](https://facesyntheticspubwedata.z6.web.core.windows.net/iccv-2021/dataset_100000.zip.002), [P3](https://facesyntheticspubwedata.z6.web.core.windows.net/iccv-2021/dataset_100000.zip.003), [P4](https://facesyntheticspubwedata.z6.web.core.windows.net/iccv-2021/dataset_100000.zip.004)
 
 ## Dataset layout
 

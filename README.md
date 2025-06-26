@@ -86,7 +86,7 @@ Our dataset strives to be as diverse as possible and generalizes to real test da
 
 ## Citation
 
-If you use the Face Synthetics Dataset your research, please cite the following [paper](https://arxiv.org/abs/2109.15102):
+If you use the Face Synthetics Dataset in your research, please cite the following [paper](https://arxiv.org/abs/2109.15102):
 
 
 ```

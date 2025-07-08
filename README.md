@@ -9,7 +9,7 @@ It was introduced in our paper [**Fake It Till You Make It: Face analysis in the
 Our dataset contains:
 - 100,000 images of faces at 512 x 512 pixel resolution
 - 70 standard facial landmark annotations
-- per-pixel semantic class anotations
+- per-pixel semantic class annotations
 
 It can be used to train machine learning systems for face-related tasks such as landmark localization and face parsing, showing that synthetic data can both match real data in accuracy as well as open up new approaches where manual labelling would be impossible.
 

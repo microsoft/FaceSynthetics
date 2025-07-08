@@ -89,7 +89,7 @@ Our dataset strives to be as diverse as possible and generalizes to real test da
 If you use the Face Synthetics Dataset in your research, please cite the following [paper](https://arxiv.org/abs/2109.15102):
 
 
-```
+```bibtex
 @inproceedings{wood2021fake,
   title={Fake it till you make it: face analysis in the wild using synthetic data alone},
   author={Wood, Erroll and Baltru{\v{s}}aitis, Tadas and Hewitt, Charlie and Dziadzio, Sebastian and Cashman, Thomas J and Shotton, Jamie},
